@@ -1,10 +1,20 @@
+#sets display information using randr
 xrandr --output eDP1 --primary --auto --dpi 220 --output HDMI3 --off
-cp XresourcesDisconnected $HOME/.Xresources
+
+#overwrites existing exresource file in home with Disconnected xresources
+cp Xresources $HOME/.Xresources
 xrdb $HOME/.Xresources
-cp i3ConfigDisconnected $HOME/.config/i3/config
+
+#overwrites existing i3 config in the .config dir with Disconnected config
+cp i3 $HOME/.config/i3/config
 i3-msg restart
-cp twmn.conf $HOME/.config/twmn/twmn.conf
+
+#overwrites existing twmn confign in .config dir with Disconnected config
+cp twmn $HOME/.config/twmn/twmn.conf
 killall -q twmnd
 twmnd &
+
+#Sets the background for disconnected state
 feh --bg-scale background
+
 /home/maurice/Scripts/./polybarLaptop.sh
