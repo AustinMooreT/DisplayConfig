@@ -6,6 +6,6 @@ i3-msg restart
 cp twmn.conf $HOME/.config/twmn/twmn.conf
 killall -q twmnd
 twmnd &
-feh --bg-scale /home/maurice/Pictures/potentialPape6.jpg
+feh --bg-scale background
 /home/maurice/Scripts/./polybarLaptop.sh
-
+twmnd &
