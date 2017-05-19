@@ -8,4 +8,3 @@ killall -q twmnd
 twmnd &
 feh --bg-scale background
 /home/maurice/Scripts/./polybarLaptop.sh
-twmnd &
