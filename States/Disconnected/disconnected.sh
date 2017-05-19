@@ -1,4 +1,5 @@
 xrandr --output eDP1 --primary --auto --dpi 220 --output HDMI3 --off
+cp XresourcesDisconnected $HOME/.Xresources
 xrdb /home/maurice/.Xresources
 mv /home/maurice/.config/i3/config /home/maurice/.config/i3/configDesktop
 mv /home/maurice/.config/i3/configLaptop /home/maurice/.config/i3/config
